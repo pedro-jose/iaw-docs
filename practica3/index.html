@@ -1,0 +1,628 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Paginas para practcias de IAW">
+      
+      
+      
+        <meta name="author" content="Pedr4o José Salvador Fajardo">
+      
+      
+        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/practica3/">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>Practica 3 - Practica en MkDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.45122f27.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e03a20ad.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto",;--md-code-font-family:"Roboto Mono",}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practica-3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://squidfunk.github.io/mkdocs-material/" title="Practica en MkDocs" class="md-header-nav__button md-logo" aria-label="Practica en MkDocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Practica en MkDocs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Practica 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/squidfunk/mkdocs-material/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://squidfunk.github.io/mkdocs-material/" title="Practica en MkDocs" class="md-nav__button md-logo" aria-label="Practica en MkDocs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Practica en MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/squidfunk/mkdocs-material/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Practica 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Practica 3
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-una-aplicacion-web-lamp-en-dos-niveles" class="md-nav__link">
+    Arquitectura de una aplicación web LAMP en dos niveles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#front_end" class="md-nav__link">
+    Front_End
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back_end" class="md-nav__link">
+    Back_End
+  </a>
+  
+    <nav class="md-nav" aria-label="Back_End">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-completo" class="md-nav__link">
+    Script completo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practicahttps/" class="md-nav__link">
+        Practica HTTPS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        Acerca de
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-una-aplicacion-web-lamp-en-dos-niveles" class="md-nav__link">
+    Arquitectura de una aplicación web LAMP en dos niveles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#front_end" class="md-nav__link">
+    Front_End
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back_end" class="md-nav__link">
+    Back_End
+  </a>
+  
+    <nav class="md-nav" aria-label="Back_End">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-completo" class="md-nav__link">
+    Script completo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/squidfunk/mkdocs-material/edit/master/docs/practica3.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="practica-3">Practica 3</h1>
+<p>https://github.com/pedro-jose/iaw-practica3.git</p>
+<h2 id="arquitectura-de-una-aplicacion-web-lamp-en-dos-niveles">Arquitectura de una aplicación web LAMP en dos niveles</h2>
+<p>En esta practica automatizaremos la instalación y configuración de una aplicación web LAMP en dos máquinas virtuales EC2 de Amazon Web Services.(Front_End y Back_End)</p>
+<p>Para realizar los scripts se ha dividido el script utilizado anteriormente, en dos uno para cada capa.</p>
+<h2 id="front_end">Front_End</h2>
+<p>Esta capa estará formada por un servidor Web con Apache HTTP Server. Su script quedaría de la siguiente manera:</p>
+<p>El script tendrá todop a excepción del mysql, que estará instalado en la otra capa. Esta tendrá apache, php, phpmyadmin, adminer, Goaccess controlado por contraseña.</p>
+<p>Sin embargo, para instalar phpmyadmin se hará desde el codigo fuente. Para ello, descargamos el código fuente y lo descomprimimos mediante unzip(Previamente instalado, mediante <code>apt install unzip</code>)</p>
+<p>Una vez descomprimimido lo moveremos a <code>/var/www/html/</code> bajo el nombre de phpmyadmin, por lo que la ruta quedaria: <code>/var/www/html/phpmyadmin</code>.</p>
+<p>Antes de esta instalación se realizó la configuracion del <code>000-default.conf</code>, que se movió desde el home al <code>/etc/apache2/sites-available/</code> y cuyo contenido es el que se muestra:</p>
+<pre><code>&lt;VirtualHost *:80&gt;
+        #ServerName www.example.com
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        &lt;Directory &quot;/var/www/html/stats&quot;&gt;
+          AuthType Basic
+          AuthName &quot;Acceso restringido&quot;
+          AuthBasicProvider file
+          AuthUserFile &quot;/home/usuario/.htpasswd&quot;
+          Require valid-user
+        &lt;/Directory&gt;
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
+<p>Hecho esto, configuramos los archivos <code>config.inc.php</code> y <code>config.php</code>, donde en ambos se debe cambiar el localhost por la ip del mysql, mediante el comando sed:</p>
+<ul>
+<li>
+<blockquote>
+<p>__<code>sed -i "s/localhost/$IP_MYSQL/" /var/www/html/phpmyadmin/config.inc.php</code></p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>__<code>sed -i "s/localhost/$IP_MYSQL/" /var/www/html/config.php</code></p>
+</blockquote>
+</li>
+</ul>
+<p>Este comando nos busca y remplaza una cadena por otra. Con esto ya estaría configurada esta capa.</p>
+<pre><code>#!/bin/bash
+
+# Habilitamos el modo de shell para mostrar los comandos que se ejecutan
+set -x
+
+# Actualizamos la lista de paquetes
+apt update
+
+# Actualizamos los paquetes
+apt upgrade -y
+
+# Instalamos el servidor web apache
+apt install apache2 -y
+
+
+# Instalamos los paquetes de PHP
+apt install php libapache2-mod-php php-mysql -y
+
+#---------------------------------------------------------------------------------------------------------------------------------
+# Herramientas adicionales
+mkdir /var/www/html/adminer
+cd /var/www/html/adminer
+wget https://github.com/vrana/adminer/releases/download/v4.7.7/adminer-4.7.7-mysql.php
+mv adminer-4.7.7-mysql.php index.php
+
+# Definimos variables para el htpasswd
+HTTPASSWD_USER=usuario
+HTTPASSWD_PASSWD=usuario
+HTTPASSWD_DIR=/home/ubuntu
+
+# Instalación de GoAcces
+echo &quot;deb http://deb.goaccess.io/ $(lsb_release -cs) main&quot; | sudo tee -a /etc/apt/sources.list.d/goaccess.list
+wget -O - https://deb.goaccess.io/gnugpg.key | sudo apt-key add -
+apt update
+apt install goaccess -y
+
+# Creacion de un directorio para cosultar las estadisticas
+mkdir -p /var/www/html/stats
+nohup goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html &amp;
+htpasswd -bc $HTTPASSWD_DIR/.htpasswd $HTTPASSWD_USER $HTTPASSWD_PASSWD
+
+# Copiamos el archivo de configuración de Apache
+cd /home/ubuntu
+cp /home/ubuntu/000-default.conf /etc/apache2/sites-available/
+systemctl restart apache2
+
+# Instalacion de PHPMYADMIM
+IP_MYSQL=54.89.139.56
+
+# Instalamos la utilidad unzip
+apt install unzip -y
+
+# Descargamos el codigo fuente de phpMyadmin
+cd/home/ubuntu
+rm -rf phpMyAdmin-5.0.4-all-languages.zip
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.zip
+
+# Descomprimimos el archivo
+unzip phpMyAdmin-5.0.4-all-languages.zip
+
+# Borramos el .zip
+rm -rf phpMyAdmin-5.0.4-all-languages.zip
+
+# Movemos el directorio de phpMyadmin
+mv phpMyAdmin-5.0.4-all-languages/ /var/www/html/phpmyadmin
+
+#Configuramos el archivo config.inc.php
+cd /var/www/html/phpmyadmin
+mv config.sample.inc.php config.inc.php
+sed -i &quot;s/localhost/$IP_MYSQL/&quot; /var/www/html/phpmyadmin/config.inc.php
+sed -i &quot;s/localhost/$IP_MYSQL/&quot; /var/www/html/config.php
+
+# ------------------------------------------------------------------------------
+# Instalación de la aplicación web propuesta
+# ------------------------------------------------------------------------------
+
+cd /var/www/html
+rm -rf iaw-practica-lamp
+git clone https://github.com/josejuansanchez/iaw-practica-lamp
+mv /var/www/html/iaw-practica-lamp/src/* /var/www/html/
+
+# Eliminamos contenido inutil
+rm -rf /var/www/html/index.html
+rm -rf /var/www/html/iaw-practica-lamp
+
+# Cambiar permisos
+chown www-data:www-data * -R
+</code></pre>
+<h2 id="back_end">Back_End</h2>
+<p>Esta capa estara formada únicamente por el mysql Server y el script de la base de datos de la aplicación web propuesta.</p>
+<p>Su script está compuesto de la siguiente manera:</p>
+<p>Primero instalamos el mysql y declaramos variables, una para cambiar la contraseña del mysql y otra que contiene la ip privada de la máquina. <code>DB_ROOT_PASSWD=root, IP_PRIVADA_MYSQL=172.31.84.254</code>.</p>
+<p>Después de que este instalado e mysql, configuramos el archivo <code>mysqld.cnf</code> para permitir conexiones desde la ip privada. Para ello, utilizamos el comando <code>sed -i</code>: </p>
+<p><code>sed -i "s/127.0.0.1/$IP_PRIVADA_MYSQL/" /etc/mysql/mysql.conf.d/mysqld.cnf</code>.</p>
+<p>Hecho esto reiniciamos mysql y comenzamos con la implementacion del script de la aplicacion en mysql.</p>
+<p>Descargamos la base de datos e importamos el script de creación de la base de datos.
+<code>mysql -u root -p$DB_ROOT_PASSWD &lt; /home/ubuntu/iaw-practica-lamp/db/database.sql</code>.</p>
+<h3 id="script-completo">Script completo</h3>
+<pre><code>#!/bin/bash
+
+# Habilitamos el modo de shell para mostrar los comandos que se ejecutan
+set -x
+
+# Actualizamos la lista de paquetes
+apt update
+
+# Actualizamos los paquetes
+apt upgrade -y
+
+# Instalamos MySQL Server
+apt install mysql-server -y
+
+#Variables
+DB_ROOT_PASSWD=root
+IP_PRIVADA_MYSQL=172.31.84.254
+
+mysql -u root &lt;&lt;&lt; &quot;ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '$DB_ROOT_PASSWD';&quot;
+
+# Configuramos MySQL para permitir conexiones desde la IP privada de la instancia
+sed -i &quot;s/127.0.0.1/$IP_PRIVADA_MYSQL/&quot; /etc/mysql/mysql.conf.d/mysqld.cnf
+
+# Reiniciamos Mysql
+systemctl restart mysql 
+
+# ------------------------------------------------------------------------------
+# ejecutamos el script de la base de datos de la aplicación web propuesta
+# ------------------------------------------------------------------------------
+cd /home/ubuntu
+rm -rf iaw-practica-lamp
+git clone https://github.com/josejuansanchez/iaw-practica-lamp
+
+# Importamos el script de creación de la base de datos
+mysql -u root -p$DB_ROOT_PASSWD &lt; /home/ubuntu/iaw-practica-lamp/db/database.sql
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="../practicahttps/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Practica HTTPS
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/worker/search.3f4c5856.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/vendor.00ecb175.min.js"></script>
+      <script src="../assets/javascripts/bundle.fbcb1fc3.min.js"></script>
+      
+    
+  </body>
+</html>
