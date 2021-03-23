@@ -1,0 +1,541 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>Practica 3 - IAW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practica-3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IAW" class="md-header__button md-logo" aria-label="IAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IAW
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Practica 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IAW" class="md-nav__button md-logo" aria-label="IAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    IAW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Principal
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Practica 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Practica 3
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-una-aplicacion-web-lamp-en-dos-niveles" class="md-nav__link">
+    Arquitectura de una aplicación web LAMP en dos niveles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#front_end" class="md-nav__link">
+    Front_End
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practicahttps/" class="md-nav__link">
+        Practica https
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        Acerca de
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-una-aplicacion-web-lamp-en-dos-niveles" class="md-nav__link">
+    Arquitectura de una aplicación web LAMP en dos niveles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#front_end" class="md-nav__link">
+    Front_End
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="practica-3">Practica 3</h1>
+<p>https://github.com/pedro-jose/iaw-practica3.git</p>
+<h2 id="arquitectura-de-una-aplicacion-web-lamp-en-dos-niveles">Arquitectura de una aplicación web LAMP en dos niveles</h2>
+<p>En esta practica automatizaremos la instalación y configuración de una aplicación web LAMP en dos máquinas virtuales EC2 de Amazon Web Services.(Front_End y Back_End)</p>
+<p>Para realizar los scripts se ha dividido el script utilizado anteriormente, en dos uno para cada capa.</p>
+<h2 id="front_end">Front_End</h2>
+<p>Esta capa estará formada por un servidor Web con Apache HTTP Server. Su script quedaría de la siguiente manera:</p>
+<p>El script tendrá todop a excepción del mysql, que estará instalado en la otra capa. Esta tendrá apache, php, phpmyadmin, adminer, Goaccess controlado por contraseña.</p>
+<p>Sin embargo, para instalar phpmyadmin se hará desde el codigo fuente. Para ello, descargamos el código fuente y lo descomprimimos mediante unzip(Previamente instalado, mediante <code>apt install unzip</code>)</p>
+<p>Una vez descomprimimido lo moveremos a <code>/var/www/html/</code> bajo el nombre de phpmyadmin, por lo que la ruta quedaria: <code>/var/www/html/phpmyadmin</code>.</p>
+<p>Antes de esta instalación se realizó la configuracion del <code>000-default.conf</code>, que se movió desde el home al <code>/etc/apache2/sites-available/</code> y cuyo contenido es el que se muestra:</p>
+<p>```<VirtualHost *:80>
+        #ServerName www.example.com
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html</p>
+<pre><code>    &lt;Directory "/var/www/html/stats"&gt;
+      AuthType Basic
+      AuthName "Acceso restringido"
+      AuthBasicProvider file
+      AuthUserFile "/home/usuario/.htpasswd"
+      Require valid-user
+    &lt;/Directory&gt;
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</code></pre>
+<p></VirtualHost></p>
+<pre><code>
+Hecho esto, configuramos los archivos `config.inc.php` y `config.php`, donde en ambos se debe cambiar el localhost por la ip del mysql, mediante el comando sed:
+
+- &gt; __`sed -i &quot;s/localhost/$IP_MYSQL/&quot; /var/www/html/phpmyadmin/config.inc.php`
+
+- &gt; __`sed -i &quot;s/localhost/$IP_MYSQL/&quot; /var/www/html/config.php`
+
+Este comando nos busca y remplaza una cadena por otra. Con esto ya estaría configurada esta capa.
+</code></pre>
+<h1 id="binbash">!/bin/bash</h1>
+<h1 id="habilitamos-el-modo-de-shell-para-mostrar-los-comandos-que-se-ejecutan">Habilitamos el modo de shell para mostrar los comandos que se ejecutan</h1>
+<p>set -x</p>
+<h1 id="actualizamos-la-lista-de-paquetes">Actualizamos la lista de paquetes</h1>
+<p>apt update</p>
+<h1 id="actualizamos-los-paquetes">Actualizamos los paquetes</h1>
+<p>apt upgrade -y</p>
+<h1 id="instalamos-el-servidor-web-apache">Instalamos el servidor web apache</h1>
+<p>apt install apache2 -y</p>
+<h1 id="instalamos-los-paquetes-de-php">Instalamos los paquetes de PHP</h1>
+<p>apt install php libapache2-mod-php php-mysql -y</p>
+<h1 id="-">---------------------------------------------------------------------------------------------------------------------------------</h1>
+<h1 id="herramientas-adicionales">Herramientas adicionales</h1>
+<p>mkdir /var/www/html/adminer
+cd /var/www/html/adminer
+wget https://github.com/vrana/adminer/releases/download/v4.7.7/adminer-4.7.7-mysql.php
+mv adminer-4.7.7-mysql.php index.php</p>
+<h1 id="definimos-variables-para-el-htpasswd">Definimos variables para el htpasswd</h1>
+<p>HTTPASSWD_USER=usuario
+HTTPASSWD_PASSWD=usuario
+HTTPASSWD_DIR=/home/ubuntu</p>
+<h1 id="instalacion-de-goacces">Instalación de GoAcces</h1>
+<p>echo "deb http://deb.goaccess.io/ $(lsb_release -cs) main" | sudo tee -a /etc/apt/sources.list.d/goaccess.list
+wget -O - https://deb.goaccess.io/gnugpg.key | sudo apt-key add -
+apt update
+apt install goaccess -y</p>
+<h1 id="creacion-de-un-directorio-para-cosultar-las-estadisticas">Creacion de un directorio para cosultar las estadisticas</h1>
+<p>mkdir -p /var/www/html/stats
+nohup goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html &amp;
+htpasswd -bc $HTTPASSWD_DIR/.htpasswd $HTTPASSWD_USER $HTTPASSWD_PASSWD</p>
+<h1 id="copiamos-el-archivo-de-configuracion-de-apache">Copiamos el archivo de configuración de Apache</h1>
+<p>cd /home/ubuntu
+cp /home/ubuntu/000-default.conf /etc/apache2/sites-available/
+systemctl restart apache2</p>
+<h1 id="instalacion-de-phpmyadmim">Instalacion de PHPMYADMIM</h1>
+<p>IP_MYSQL=54.89.139.56</p>
+<h1 id="instalamos-la-utilidad-unzip">Instalamos la utilidad unzip</h1>
+<p>apt install unzip -y</p>
+<h1 id="descargamos-el-codigo-fuente-de-phpmyadmin">Descargamos el codigo fuente de phpMyadmin</h1>
+<p>cd/home/ubuntu
+rm -rf phpMyAdmin-5.0.4-all-languages.zip
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.zip</p>
+<h1 id="descomprimimos-el-archivo">Descomprimimos el archivo</h1>
+<p>unzip phpMyAdmin-5.0.4-all-languages.zip</p>
+<h1 id="borramos-el-zip">Borramos el .zip</h1>
+<p>rm -rf phpMyAdmin-5.0.4-all-languages.zip</p>
+<h1 id="movemos-el-directorio-de-phpmyadmin">Movemos el directorio de phpMyadmin</h1>
+<p>mv phpMyAdmin-5.0.4-all-languages/ /var/www/html/phpmyadmin</p>
+<h1 id="configuramos-el-archivo-configincphp">Configuramos el archivo config.inc.php</h1>
+<p>cd /var/www/html/phpmyadmin
+mv config.sample.inc.php config.inc.php
+sed -i "s/localhost/$IP_MYSQL/" /var/www/html/phpmyadmin/config.inc.php
+sed -i "s/localhost/$IP_MYSQL/" /var/www/html/config.php</p>
+<h1 id="-_1">------------------------------------------------------------------------------</h1>
+<h1 id="instalacion-de-la-aplicacion-web-propuesta">Instalación de la aplicación web propuesta</h1>
+<h1 id="-_2">------------------------------------------------------------------------------</h1>
+<p>cd /var/www/html
+rm -rf iaw-practica-lamp
+git clone https://github.com/josejuansanchez/iaw-practica-lamp
+mv /var/www/html/iaw-practica-lamp/src/* /var/www/html/</p>
+<h1 id="eliminamos-contenido-inutil">Eliminamos contenido inutil</h1>
+<p>rm -rf /var/www/html/index.html
+rm -rf /var/www/html/iaw-practica-lamp</p>
+<h1 id="cambiar-permisos">Cambiar permisos</h1>
+<p>chown www-data:www-data * -R</p>
+<pre><code>
+## Back_End
+Esta capa estara formada únicamente por el mysql Server y el script de la base de datos de la aplicación web propuesta.
+
+Su script está compuesto de la siguiente manera:
+
+Primero instalamos el mysql y declaramos variables, una para cambiar la contraseña del mysql y otra que contiene la ip privada de la máquina. `DB_ROOT_PASSWD=root, IP_PRIVADA_MYSQL=172.31.84.254`.
+
+Después de que este instalado e mysql, configuramos el archivo `mysqld.cnf` para permitir conexiones desde la ip privada. Para ello, utilizamos el comando `sed -i`: 
+
+`sed -i &quot;s/127.0.0.1/$IP_PRIVADA_MYSQL/&quot; /etc/mysql/mysql.conf.d/mysqld.cnf`.
+
+Hecho esto reiniciamos mysql y comenzamos con la implementacion del script de la aplicacion en mysql.
+
+Descargamos la base de datos e importamos el script de creación de la base de datos.
+`mysql -u root -p$DB_ROOT_PASSWD &lt; /home/ubuntu/iaw-practica-lamp/db/database.sql`.
+
+### Script completo
+
+</code></pre>
+<h1 id="binbash_1">!/bin/bash</h1>
+<h1 id="habilitamos-el-modo-de-shell-para-mostrar-los-comandos-que-se-ejecutan_1">Habilitamos el modo de shell para mostrar los comandos que se ejecutan</h1>
+<p>set -x</p>
+<h1 id="actualizamos-la-lista-de-paquetes_1">Actualizamos la lista de paquetes</h1>
+<p>apt update</p>
+<h1 id="actualizamos-los-paquetes_1">Actualizamos los paquetes</h1>
+<p>apt upgrade -y</p>
+<h1 id="instalamos-mysql-server">Instalamos MySQL Server</h1>
+<p>apt install mysql-server -y</p>
+<h1 id="variables">Variables</h1>
+<p>DB_ROOT_PASSWD=root
+IP_PRIVADA_MYSQL=172.31.84.254</p>
+<p>mysql -u root &lt;&lt;&lt; "ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '$DB_ROOT_PASSWD';"</p>
+<h1 id="configuramos-mysql-para-permitir-conexiones-desde-la-ip-privada-de-la-instancia">Configuramos MySQL para permitir conexiones desde la IP privada de la instancia</h1>
+<p>sed -i "s/127.0.0.1/$IP_PRIVADA_MYSQL/" /etc/mysql/mysql.conf.d/mysqld.cnf</p>
+<h1 id="reiniciamos-mysql">Reiniciamos Mysql</h1>
+<p>systemctl restart mysql </p>
+<h1 id="-_3">------------------------------------------------------------------------------</h1>
+<h1 id="ejecutamos-el-script-de-la-base-de-datos-de-la-aplicacion-web-propuesta">ejecutamos el script de la base de datos de la aplicación web propuesta</h1>
+<h1 id="-_4">------------------------------------------------------------------------------</h1>
+<p>cd /home/ubuntu
+rm -rf iaw-practica-lamp
+git clone https://github.com/josejuansanchez/iaw-practica-lamp</p>
+<h1 id="importamos-el-script-de-creacion-de-la-base-de-datos">Importamos el script de creación de la base de datos</h1>
+<p>mysql -u root -p$DB_ROOT_PASSWD &lt; /home/ubuntu/iaw-practica-lamp/db/database.sql
+```</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Principal
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../practicahttps/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Practica https
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+    
+  </body>
+</html>
